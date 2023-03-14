@@ -65,7 +65,7 @@ public class EmployeeController {
         if (result.hasErrors()) {
             return "updateEmployee";
         }
-        employeeSvc.save(employee);
+        employeeSvc.update(employee);
         return "redirect:/employees";
     }
 }
