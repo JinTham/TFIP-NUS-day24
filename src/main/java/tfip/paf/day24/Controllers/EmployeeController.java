@@ -61,7 +61,7 @@ public class EmployeeController {
         return "updateEmployee";
     }
     @PostMapping(path="/saveUpdate")
-    public String updateEmployee(@ModelAttribute("employee") Employee employee, BindingResult result) {
+    public String saveUpdateEmployee(@ModelAttribute("employee") Employee employee, BindingResult result) {
         if (result.hasErrors()) {
             return "updateEmployee";
         }
